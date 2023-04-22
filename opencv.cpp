@@ -2,7 +2,7 @@
 #include<opencv4/opencv2/opencv.hpp>
 int main(){
     cv::Mat img;
-    img=cv::imread("../OIP-C.jpg");
+    img=cv::imread("../img_path/OIP-C.jpg");
     if(!img.data){
         std::cout<<"imread failed"<<std::endl;
         return -1;
