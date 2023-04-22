@@ -1,0 +1,3 @@
+/home/wlk/workspace/project_img_process/build/CMakeFiles/rebuild_cache.dir
+/home/wlk/workspace/project_img_process/build/CMakeFiles/edit_cache.dir
+/home/wlk/workspace/project_img_process/build/CMakeFiles/manager.dir

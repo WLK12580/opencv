@@ -1,6 +1,5 @@
 本仓库主要针对opencv库的学习
 
-
 echo "# opencv" >> README.md
 git init
 git add README.md
