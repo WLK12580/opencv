@@ -1,9 +1,13 @@
-cmake_minimum_required(VERSION 3.0)
-project(libtorch)
+cmake_minimum_required(VERSION 3.14)
 
-set(CMAKE_PREFIX_PATH  "/home/solidworks/my_install/libtorch")
-# find_package(Torch REQUIRED)
-find_package(Torch REQUIRED)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
-add_executable(libtorch libtorch.cpp)
-target_link_libraries(libtorch "${TORCH_LIBRARIES}")
+project(IMG_Calibration)
+
+find_package(OpenCV REQUIRED)
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+link_directories(${OpenCV_LIBRARY_DIRS})
+
+add_executable(IMG_Calibration claibration_img.cpp)
+
+target_link_libraries(IMG_Calibration ${OpenCV_LIBS})
